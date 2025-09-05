@@ -1,0 +1,2 @@
+/home/macorso/Projects/ft_scop/libs/glm/build/CMakeFiles/edit_cache.dir
+/home/macorso/Projects/ft_scop/libs/glm/build/CMakeFiles/rebuild_cache.dir

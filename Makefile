@@ -9,7 +9,8 @@ OBJDIR = objs
 SOURCES = main.cpp \
 		Application.cpp \
 		WindowManager.cpp \
-		Camera.cpp
+		Camera.cpp \
+		ShaderManager.cpp
 
 GLAD_SRC = libs/glad/src/glad.c
 OBJECTS = $(SOURCES:%.cpp=$(OBJDIR)/%.o) $(OBJDIR)/glad.o

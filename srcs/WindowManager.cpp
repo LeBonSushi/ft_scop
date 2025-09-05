@@ -62,6 +62,6 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos)
 
 	if (app)
 	{
-		app->getCamera().handleMouseMovement(static_cast<float>(xpos), static_cast<float>(ypos));
+		app->getCamera().handleMouseMovement(static_cast<float>(xpos), static_cast<float>(ypos), DeltaTime);
 	}
 }

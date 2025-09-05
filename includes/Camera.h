@@ -6,6 +6,7 @@
 
 #define FOV 45.0
 #define MOUSE_SENSITIVITY 1.0
+#define CAMERA_SPEED 3.0f
 
 class Camera
 {
@@ -15,7 +16,10 @@ class Camera
 
 		glm::vec3 getPosition() const { return m_Position; }
 		void setPosition(const glm::vec3& newPosition) { m_Position = newPosition; }
-		void handleMouseMovement(float xpos, float ypos);
+		void handleMouseMovement(float xpos, float ypos, float DeltaTime);
+		void handleInput(float DeltaTime);
+		void update(float DeltaTime);
+		void updateViewMatrix();
 
 	private:
 		glm::vec3 m_Position;
